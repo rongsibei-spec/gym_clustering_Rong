@@ -1,0 +1,44 @@
+{
+  "members": 330,
+  "train": 231,
+  "test": 99,
+  "average_extras_spend": 26.01212121212121,
+  "chosen_k": 4,
+  "baseline_test_spread": 600.7302631597036,
+  "v1_test_spread": 149.9843387794104,
+  "test_spread_reduction_pct": 75.0329976734438,
+  "new_member_segment": "Light users",
+  "new_member_credit": true,
+  "baseline_monthly_net": -1200.0,
+  "v1_monthly_net": 185.0,
+  "monthly_improvement": 1385.0,
+  "credit_recipients": 70
+}
+
+Within-group spread
+     Train    Test
+k                 
+1  1386.00  600.73
+2   950.26  403.62
+3   611.54  284.19
+4   335.99  149.98
+5   310.47  141.39
+6   287.16  130.57
+7   271.95  130.52
+8   254.61  125.29
+
+Centroids in original units and full-data counts
+     age  visits_per_month  avg_visit_minutes  classes_per_month  months_member  monthly_extras_spend            segment  members  credit
+0  27.33              3.04              40.70               0.89           5.76                  8.98        Light users       70    True
+3  42.59              9.44              55.13               6.95          23.97                 47.33     Class regulars       91   False
+1  64.16             11.96              46.53               3.87          57.82                 17.36  Long-time members       60   False
+2  33.15             16.04              64.46               0.87          30.27                 24.89  Frequent trainers      109   False
+
+Member-level offer economics by segment
+                  baseline_net        targeted_net       
+                         count    sum        count    sum
+segment                                                  
+Class regulars              91 -895.0           91    0.0
+Frequent trainers          109 -445.0          109    0.0
+Light users                 70  185.0           70  185.0
+Long-time members           60  -45.0           60    0.0
